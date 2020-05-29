@@ -1,7 +1,7 @@
 {
   "name": "phelia-example",
   "version": "0.1.0",
-  "engines" {
+  "engines": {
     "yarn": "1.17.3"
   },
   "license": "MIT",
