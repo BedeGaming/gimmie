@@ -14,10 +14,8 @@ var path = require('path');
 export const client = new Phelia(process.env.SLACK_TOKEN)
 client.registerComponents([GimmieHome, HelloGimmie]);
 
-
 const slackEvents = createEventAdapter(process.env.SLACK_SIGNING_SECRET);
 slackEvents.on("app_home_opened", client.appHomeHandler(GimmieHome));
-
 
 app.get('/', function(req, res) {
   console.log('hi')
