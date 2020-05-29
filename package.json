@@ -1,6 +1,9 @@
 {
   "name": "phelia-example",
   "version": "0.1.0",
+  "engines" {
+    "yarn": "1.17.3"
+  },
   "license": "MIT",
   "repository": "https://github.com/maxchehab/phelia-example",
   "devDependencies": {
@@ -27,6 +30,7 @@
   "scripts": {
     "build": "tsc",
     "clean": "yarn rimraf dist",
+    "postinstall": "npm run build-ts",
     "prestart": "yarn build",
     "start": "node dist/server.js"
   }
