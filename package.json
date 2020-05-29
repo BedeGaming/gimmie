@@ -31,7 +31,7 @@
   "scripts": {
     "build": "tsc",
     "clean": "yarn rimraf dist",
-    "postinstall": "npm run build-ts",
+    "postinstall": "yarn build",
     "prestart": "yarn build",
     "start": "node dist/server.js"
   }
