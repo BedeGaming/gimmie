@@ -1,5 +1,28 @@
 {
   "name": "Beer",
   "description": "A refreshing drink",
-  "cost": "$12"
+  "cost": "$12",
+  "ingredients": ["yeast", "water"],
+  "gimmie-config": {
+    "name": "Product",
+    "fields": {
+      "name": {
+        "type": "string",
+        "default": "Beer" 
+      },
+      "description": {
+        "type": "string",
+        "default": "A refreshing drink"
+      },
+      "cost": {
+        "type": "number",
+        "default": "10"
+      },
+      "ingredients": { 
+        "type": "string", 
+        "default": "ingredient",
+        "repeatable": true 
+      }
+    }
+  }
 }

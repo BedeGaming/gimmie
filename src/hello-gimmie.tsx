@@ -1,5 +1,4 @@
 import React from "react";
-import person from "./mocks/person.json";
 
 import {
   Message,
@@ -8,8 +7,7 @@ import {
   Text
 } from "phelia";
 
-export function HelloGimmie ({ useState }: PheliaMessageProps) {
-
+export function HelloGimmie ({ props }: PheliaMessageProps) {
   function formatJsonObject(obj: Object) {
     return "```\n" + 
             JSON.stringify(obj, null, 2)+
@@ -17,9 +15,9 @@ export function HelloGimmie ({ useState }: PheliaMessageProps) {
   }
 
   return (
-    <Message text="Hi There">
+    <Message text="Here you go!">
       <Section>
-      <Text type="mrkdwn">{formatJsonObject(person)}</Text>
+      <Text type="mrkdwn">{formatJsonObject(props)}</Text>
       </Section>
     </Message>
   );

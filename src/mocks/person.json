@@ -1,5 +1,22 @@
 {
   "firstname": "Chrissy",
   "surname": "Semens",
-  "dOB": "14/07/1984"
+  "dob": "14/07/1984",
+  "gimmie-config": {
+    "name": "Person",
+    "fields": {
+      "firstname": {
+        "type":"string",
+        "default":"Chrissy"
+      },
+      "surname": {
+        "type": "string",
+        "default": "Semens"
+      },
+      "dob": {
+        "type": "date",
+        "default": "1984-07-07"
+      }
+    }
+  }
 }
